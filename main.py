@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 import re
 
 with open('451.txt', 'r') as story:
