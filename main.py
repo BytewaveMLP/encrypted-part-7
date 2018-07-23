@@ -19,10 +19,11 @@ for match in re.findall(pattern, encoded_text):
 	page = int(page)
 	line = int(line)
 	char = int(char)
-	print(pages_lines[page - 1][line - 1])
-	print(page, line, char)
 	decoded_char = pages_lines[page - 1][line - 1][char - 1]
+	print(match, '\t->\t', decoded_char)
 	decoded_text = decoded_text.replace(match, decoded_char)
-	print(decoded_text)
 
+print()
+print()
+print('DECODED:')
 print(decoded_text)
